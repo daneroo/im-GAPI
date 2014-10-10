@@ -1,0 +1,15 @@
+<div class="col-md-3" ng-controller="HomeCtrl">
+    <button class="btn btn-primary" ng-click='fetchListV2()'>Fetch List V2</button>
+    <button class="btn btn-primary" ng-click='fetchListV3()'>Fetch List V3</button>
+</div>
+<div class="col-md-9" ng-controller="HomeCtrl">
+
+
+ <div ng-init="vidW=535; vidH=vidW*9/16;">
+     <iframe class="youtube" type="text/html" width="{{vidW}}" height="{{vidH}}"
+        ng-src="{{videoSrc}}"
+        frameborder="0" allowfullscreen >
+</div>
+
+
+</div>
